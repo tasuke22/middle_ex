@@ -1,22 +1,36 @@
 @use "../global" as *;
 
 .p-plan {
-  padding-top: 60px;
-  padding-bottom: 145px;
+  padding-top: rem(60);
+  padding-bottom: rem(166);
   background: url(../../img/bg02.jpg) no-repeat center center/cover;
   text-align: center;
-  &__wrap {
-    display: flex;
-    margin: auto;
-    text-align: start;
-    gap: 0 90px;
+}
+.p-plan__wrap {
+  @include mq(md) {
+    grid-template-columns: 1fr;
+    gap: rem(50) 0;
   }
-  &__txt {
-    margin-bottom: 20px;
-    font-size: rem(20);
-    line-height: 1.5;
+  display: grid;
+  margin-top: rem(66);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 rem(94);
+}
+.p-plan__body {
+  text-align: start;
+}
+.p-plan__img {
+  @include mq(md) {
+    width: 100%;
   }
-  &__des {
-    line-height: 2;
-  }
+  margin-bottom: rem(32);
+}
+.p-plan__title {
+  margin-bottom: rem(36);
+  font-size: rem(20);
+  line-height: calc(32 / 20);
+}
+.p-plan__txt {
+  font-size: rem(16);
+  line-height: calc(32 / 16);
 }
