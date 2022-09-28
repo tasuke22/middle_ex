@@ -1,19 +1,18 @@
+@use "sass:math";
+
 $breakpoints: (
-  "xs": (min-width: 0),
-  "sm": (min-width: 576px),
-  "md": (min-width: 768px),
-  "lg": (min-width: 992px),
-  "xl": (min-width: 1200px),
-  "xxl": (min-width: 1400px)
+  "md": (
+    max-width: 768px,
+  ),
 );
 
-@mixin responsive($breakpoint) {
+@mixin mq($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
       @content;
     }
   }
- 
+
   // マップ型で定義されていない値が呼び出された時はエラーを返す
   @else {
     @error "指定されたブレークポイントは定義されていません。" + "指定できるブレークポイントは次のとおりです。 -> #{map-keys($breakpoints)}";
@@ -21,5 +20,5 @@ $breakpoints: (
 }
 
 @function rem($px) {
-  @return ($px / 16) * 1rem;
+  @return math.div($px, 16) * 1rem;
 }

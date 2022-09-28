@@ -1,4 +1,5 @@
 @use "../global" as *;
+@use "sass:math";
 
 .p-contents {
   &__container {
@@ -8,9 +9,11 @@
     gap: 0 135px;
   }
   &__pic {
+    align-self: center;
     img {
-      object-fit: contain;
-      height: 100%;
+      aspect-ratio: math.div(1050, 545);
+      // object-fit: contain;
+      // height: 100%;
     }
   }
   &__ttl {

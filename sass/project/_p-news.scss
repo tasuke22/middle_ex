@@ -1,58 +1,18 @@
 @use "../global" as *;
 
 .p-news {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
   text-align: center;
-  img {
-    margin-bottom: 20px;
-  }
-  &__ttl {
-    margin-bottom: 65px;
-    font-weight: bold;
-    font-size: 2.25rem;
-  }
-  &__select {
-    margin-bottom: 50px;
-    :first-child {
-      text-decoration: underline;
-    }
-    :last-child {
-      margin-left: 50px;
-    }
-  }
-  &__grid {
-    display: grid;
+}
+.p-news__select {
+  margin-top: rem(46);
+  margin-bottom: rem(49);
+}
 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    gap: 20px 46px;
-  }
-  &__wrap {
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    background-color: #f6f6f6;
-  }
-  &__pic {
-    flex: 1;
-    img {
-      // width: 100px;
-      // height: 100px;
-      height: 100%;
-    }
-  }
-  &__txt {
-    flex: 4;
-    text-align: start;
-
-    padding-inline: 20px;
-    time {
-      font-size: rem(14);
-    }
-    p {
-      margin-top: 10px;
-    }
-  }
+.p-news__select span:first-child {
+  text-decoration: underline;
+}
+.p-news__select span:last-child {
+  margin-left: rem(50);
 }

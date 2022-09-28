@@ -1,0 +1,23 @@
+@use "../global" as *;
+@use "sass:math";
+
+.c-card {
+  display: flex;
+  height: rem(130);
+  padding: rem(15) rem(10);
+  background-color: #f6f6f6;
+}
+.c-card__img {
+  aspect-ratio: math.div(103, 100);
+}
+.c-card__body {
+  padding-left: rem(30);
+  text-align: start;
+}
+.c-card__time {
+  font-size: rem(14);
+}
+.c-card__txt {
+  margin-top: rem(10);
+  font-size: rem(16);
+}

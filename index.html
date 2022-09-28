@@ -29,9 +29,9 @@
       </div>
       <nav class="p-gnav">
         <ul class="p-gnav__list">
-          <li class="p-gnav__list-item">お部屋</li>
-          <li class="p-gnav__list-item">お料理</li>
-          <li class="p-gnav__list-item">温泉</li>
+          <li class="p-gnav__item">お部屋</li>
+          <li class="p-gnav__item">お料理</li>
+          <li class="p-gnav__item">温泉</li>
         </ul>
       </nav>
       <div class="p-reserve">
@@ -52,7 +52,7 @@
     </section>
 
     <section class="p-opening">
-      <div class="l-container">
+      <div class="l-inner">
         <div class="p-opening__wrap">
           <h2 class="p-opening__ttl">温海温泉の<br>美しさに癒やされて</h2>
           <p class="p-opening__txt1">
@@ -138,10 +138,14 @@
 
 
     <section class="p-plan">
-      <div class="l-container">
+      <div class="l-inner">
 
-        <img src="./img/logo02.png" alt="">
-        <h2 class="p-plan__ttl">おすすめご宿泊プラン</h2>
+
+        <h2 class="c-section-title">
+          <img src="./img/logo02.png" alt="" class="c-section-title__logo">
+          <p class="c-section-title__txt">おすすめご宿泊プラン</p>
+        </h2>
+
 
 
         <div class="p-plan__wrap">
@@ -197,87 +201,69 @@
 
     </section>
 
-    <section class="p-news">
-      <div class="l-container">
-        <img src="./img/logo02.png" alt="">
-        <h2 class="p-plan__ttl">お知らせ</h2>
+    <section class="p-news l-inner">
+      <h2 class="c-section-title">
+        <img src="./img/logo02.png" alt="" class="c-section-title__logo">
+        <p class="c-section-title__txt">お知らせ</p>
+      </h2>
+      <div class="p-news__select">
+        <span>営業情報</span>
+        <span>その他</span>
+      </div>
+      <div class="p-cards">
 
-        <div class="p-news__select">
-          <span>営業情報</span>
-          <span>その他</span>
-        </div>
-
-
-        <div class="p-news__grid">
-
-          <div class="p-news__wrap">
-            <figure class="p-news__pic">
-              <img src="./img/news01.jpg" alt="">
-            </figure>
-            <div class="p-news__txt">
-              <time datetime="2000.01.01">2020.12.24</time>
-              <p>年末最後の営業日は27日になります。</p>
-            </div>
+        <a href="" class="c-card">
+          <img src="./img/news01.jpg" alt="" class="c-card__img">
+          <div class="c-card__body">
+            <time datetime="2020.12.24" class="c-card__time">2020.12.24</time>
+            <p class="c-card__txt">年末最後の営業日は27日になります。</p>
           </div>
-
-          <div class="p-news__wrap">
-            <figure class="p-news__pic">
-              <img src="./img/news02.jpg" alt="">
-            </figure>
-            <div class="p-news__txt">
-              <time datetime="2000.01.01">2020.12.24</time>
-              <p>年末最後の営業日のお知らせ</p>
-            </div>
+        </a>
+        <a href="" class="c-card">
+          <img src="./img/news02.jpg" alt="" class="c-card__img">
+          <div class="c-card__body">
+            <time datetime="2020.12.24" class="c-card__time">2020.12.24</time>
+            <p class="c-card__txt">年末最後の営業日のお知らせ</p>
           </div>
-
-          <div class="p-news__wrap">
-            <figure class="p-news__pic">
-              <img src="./img/news02.jpg" alt="">
-            </figure>
-            <div class="p-news__txt">
-              <time datetime="2000.01.01">2020.12.11</time>
-              <p>12.21は臨時休業とさせていただきますので、よろしく
-                お願いします。</p>
-            </div>
+        </a>
+        <a href="" class="c-card">
+          <img src="./img/news02.jpg" alt="" class="c-card__img">
+          <div class="c-card__body">
+            <time datetime="2020.12.24" class="c-card__time">2020.12.11</time>
+            <p class="c-card__txt">12.21は臨時休業とさせていただきますので、よろしくお願いします。</p>
           </div>
-
-          <div class="p-news__wrap">
-            <figure class="p-news__pic">
-              <img src="./img/news01.jpg" alt="">
-            </figure>
-            <div class="p-news__txt">
-              <time datetime="2000.01.01">2020.12.24</time>
-              <p>年末最後の営業日のお知らせ</p>
-            </div>
+        </a>
+        <a href="" class="c-card">
+          <img src="./img/news01.jpg" alt="" class="c-card__img">
+          <div class="c-card__body">
+            <time datetime="2020.12.24" class="c-card__time">2020.12.24</time>
+            <p class="c-card__txt">年末最後の営業日は27日になります。</p>
           </div>
-
-          <div class="p-news__wrap">
-            <figure class="p-news__pic">
-              <img src="./img/news01.jpg" alt="">
-            </figure>
-            <div class="p-news__txt">
-              <time datetime="2000.01.01">2020.12.01</time>
-              <p>和室の改装を行いますため、12.10はお休み<br>させていただきます。</p>
-            </div>
+        </a>
+        <a href="" class="c-card">
+          <img src="./img/news01.jpg" alt="" class="c-card__img">
+          <div class="c-card__body">
+            <time datetime="2020.12.24" class="c-card__time">2020.12.01</time>
+            <p class="c-card__txt">和室の改装を行いますため、12.10はお休みさせていただきます。</p>
           </div>
-
-          <div class="p-news__wrap">
-            <figure class="p-news__pic">
-              <img src="./img/news02.jpg" alt="">
-            </figure>
-            <div class="p-news__txt">
-              <time datetime="2000.01.01">2020.12.24</time>
-              <p>年末最後の営業日のお知らせ</p>
-            </div>
+        </a>
+        <a href="" class="c-card">
+          <img src="./img/news02.jpg" alt="" class="c-card__img">
+          <div class="c-card__body">
+            <time datetime="2020.12.24" class="c-card__time">2020.12.24</time>
+            <p class="c-card__txt">年末最後の営業日は27日になります。</p>
           </div>
-        </div>
+        </a>
+
       </div>
     </section>
 
     <section class="p-access">
-      <div class="l-container">
-        <img src="./img/logo02.png" alt="">
-        <h2 class="p-plan__ttl">アクセス</h2>
+      <div class="l-inner">
+        <h2 class="c-section-title">
+          <img src="./img/logo02.png" alt="" class="c-section-title__logo">
+          <p class="c-section-title__txt">アクセス</p>
+        </h2>
 
         <div class="p-access__wrap">
 
@@ -318,10 +304,12 @@
     </nav>
 
     <div class="l-footer__wrap">
+
       <div class="l-footer__logo">
         <img src="./img/logo02.png" alt="">
         <h1 class="l-footer__ttl">石井花壇</h1>
       </div>
+
       <address class="l-footer__address">
         <span>〒000-0000</span>
         <span>山形県鶴岡市xxxxxxxxxxx</span>
