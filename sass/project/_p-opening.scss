@@ -1,0 +1,36 @@
+@use "../global" as *;
+
+.p-opening {
+  max-width: 100%;
+  background: url(../../img/bg.jpg) no-repeat center center/cover;
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    letter-spacing: 0.5em;
+    margin-bottom: 100px;
+
+    padding-top: 150px;
+    height: 680px;
+
+    line-height: 2.5;
+    gap: 118px 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  span {
+    padding-top: 335px;
+  }
+
+  &__ttl {
+    font-size: rem(28);
+    text-indent: -2.6em;
+  }
+  &__txt4 {
+    font-size: rem(22);
+    padding-top: 20px;
+  }
+}

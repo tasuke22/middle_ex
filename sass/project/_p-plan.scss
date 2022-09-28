@@ -1,0 +1,29 @@
+@use "../global" as *;
+
+.p-plan {
+  padding-top: 60px;
+  padding-bottom: 145px;
+  background: url(../../img/bg02.jpg) no-repeat center center/cover;
+  text-align: center;
+  img {
+    margin-bottom: 30px;
+  }
+  &__ttl {
+    margin-bottom: 65px;
+    font-size: rem(36);
+  }
+  &__wrap {
+    display: flex;
+    margin: auto;
+    text-align: start;
+    gap: 0 90px;
+  }
+  &__txt {
+    margin-bottom: 20px;
+    font-size: rem(20);
+    line-height: 1.5;
+  }
+  &__des {
+    line-height: 2;
+  }
+}

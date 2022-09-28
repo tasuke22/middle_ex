@@ -1,0 +1,34 @@
+@use "../global" as *;
+
+.p-contents {
+  &__container {
+    display: flex;
+    margin-bottom: 120px;
+    line-height: 2;
+    gap: 0 135px;
+  }
+  &__pic {
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+  &__ttl {
+    margin-bottom: 75px;
+    font-size: rem(36);
+  }
+  &__txt {
+    margin-bottom: 75px;
+  }
+  &__wrap {
+    a {
+      padding: 20px 45px;
+      border: solid 1px #707070;
+    }
+  }
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}

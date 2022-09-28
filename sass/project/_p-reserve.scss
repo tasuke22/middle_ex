@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+.p-reserve {
+  display: flex;
+  margin-left: auto;
+  padding: 20px 37px;
+  background-color: $reserve-btn;
+  button {
+    margin-left: 10px;
+    color: $white-color;
+    font-weight: bold;
+  }
+}

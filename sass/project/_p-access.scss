@@ -1,0 +1,45 @@
+@use "../global" as *;
+@use "sass:math";
+
+.p-access {
+  background-image: url(../../img/bg.jpg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  img {
+  }
+  &__ttl {
+    margin-bottom: 65px;
+    font-weight: bold;
+    font-size: 2.25rem;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &__pic {
+    width: 55%;
+  }
+  &__txt {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-block: 20px;
+    p {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    span {
+      margin-bottom: 20px;
+      text-align: start;
+    }
+  }
+}
+.iframe {
+  width: 60%;
+  height: 100%;
+  aspect-ratio: math.div(790, 590);
+}

@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+.l-header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  // max-width: 1920px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: $white-color;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__ttl {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: rem(32);
+    letter-spacing: .1em;
+  }
+}
