@@ -2,43 +2,40 @@
 @use "sass:math";
 
 .p-access {
+  padding-top: rem(60);
+  padding-bottom: rem(110);
   background-image: url(../../img/bg.jpg);
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
-  img {
-  }
-  &__ttl {
-    margin-bottom: 65px;
-    font-weight: bold;
-    font-size: 2.25rem;
-  }
-  &__wrap {
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-  }
-  &__pic {
-    width: 55%;
-  }
-  &__txt {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 60px;
-    padding-block: 20px;
-    p {
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    span {
-      margin-bottom: 20px;
-      text-align: start;
-    }
+}
+.p-access__wrap {
+  display: grid;
+  align-items: center;
+  padding-top: rem(84);
+  grid-template-columns: 1.5fr 1fr;
+  gap: 0 rem(84);
+  @include mq(md) {
+    grid-template-columns: 1fr;
+    gap: rem(30) 0;
   }
 }
-.iframe {
+.p-access__img {
+  @include mq(md) {
+    width: 100%;
+  }
+}
+.p-access__txt {
+  display: flex;
+  flex-direction: column;
+  font-size: rem(16);
+  text-align: start;
+  gap: rem(24) 0;
+}
+
+.p-iframe {
   width: 60%;
-  aspect-ratio: math.div(790, 590);
+  margin-top: rem(69);
+  aspect-ratio: math.div(792, 592);
+  @include mq(md) {
+    width: 100%;
+  }
 }
