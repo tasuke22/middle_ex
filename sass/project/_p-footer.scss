@@ -1,0 +1,26 @@
+@use "../global" as *;
+
+.p-footer {
+  text-align: center;
+}
+.p-footer__address {
+  margin-top: rem(72);
+}
+.p-footer__address span:last-child {
+  margin-left: rem(21);
+  letter-spacing: 0.18em;
+}
+.p-footer__tell {
+  margin-top: rem(23);
+  margin-bottom: rem(61);
+}
+.p-footer__tell span:last-child {
+  margin-left: rem(21);
+}
+.p-footer__copy {
+  display: block;
+  padding: 23px 0;
+  text-align: center;
+  color: $white-color;
+  background-color: #000000;
+}

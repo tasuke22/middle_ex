@@ -1,8 +1,13 @@
 @use "../global" as *;
 
 .c-section-title__logo {
-  margin-bottom: 20px;
+  margin-bottom: rem(20);
 }
 .c-section-title__txt {
   font-size: rem(36);
+}
+
+.c-section-title__txt--footer {
+  font-size: rem(32);
+  font-weight: bold;
 }

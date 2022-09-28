@@ -12,7 +12,6 @@
 }
 
 .p-gnav--vertical {
-  font-size: rem(18);
   padding-top: 64px;
   margin-bottom: 96px;
 }
@@ -27,5 +26,6 @@
   font-size: rem(18);
 }
 
-.p-gnav__list-item--vertical {
+.p-gnav__item--vertical {
+  font-size: rem(18);
 }
