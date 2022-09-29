@@ -4,6 +4,15 @@ $breakpoints: (
   "md": (
     max-width: 768px,
   ),
+  "lg": (
+    max-width: 1180px,
+  ),
+  "xl": (
+    max-width: 1300px,
+  ),
+  "xxl": (
+    max-width: 1500px,
+  ),
 );
 
 @mixin mq($breakpoint) {

@@ -8,14 +8,18 @@
 }
 .p-contents__wrap {
   display: flex;
-  gap: 0 rem(122);
+  gap: 0 6.8%;
   align-items: flex-start;
+  @include mq(lg) {
+    display: block;
+  }
 }
 .p-contents__img {
-  // padding-right: 7.13542%;
-  // max-width: 100%;
-  // height: 540px;
-  // object-fit: cover;
+  max-width: 1050px;
+  width: 55.2%;
+  @include mq(lg) {
+    width: 100%;
+  }
 }
 .p-contents__wrap--revere {
   flex-direction: row-reverse;
@@ -23,16 +27,33 @@
 .p-contents__concept {
   padding-top: rem(22);
   padding-bottom: rem(90);
+  @include mq(lg) {
+    padding-bottom: 0;
+  }
 }
 .p-contents__title {
   font-size: rem(36);
   line-height: calc(62 / 36);
   padding-bottom: rem(75);
+  @include mq(xxl) {
+    font-size: rem(28);
+    padding-bottom: rem(55);
+  }
+  @include mq(xl) {
+    font-size: rem(24);
+    padding-bottom: rem(45);
+  }
 }
 .p-contents__txt {
   font-size: rem(16);
   line-height: calc(32 / 16);
   padding-bottom: rem(75);
+  @include mq(xxl) {
+    padding-bottom: rem(55);
+  }
+  @include mq(xl) {
+    padding-bottom: rem(35);
+  }
 }
 .p-contents__link {
   font-size: rem(16);

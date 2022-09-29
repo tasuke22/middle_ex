@@ -3,34 +3,66 @@
 .p-opening {
   max-width: 100%;
   background: url(../../img/bg.jpg) no-repeat center center/cover;
-
-  &__wrap {
-    width: 100%;
+}
+.p-opening__wrap {
+  @include mq(md) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    letter-spacing: 0.5em;
-    margin-bottom: 100px;
-
-    padding-top: 150px;
-    height: 680px;
-
-    line-height: 2.5;
-    gap: 118px 0;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    padding-top: rem(50);
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    gap: rem(50) 0;
   }
-  span {
-    padding-top: 335px;
-  }
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: rem(100);
+  padding-top: rem(150);
+  padding-bottom: rem(120);
+  line-height: 2.5;
+  letter-spacing: 0.5em;
+  gap: rem(118) 0;
+  text-orientation: upright;
+}
 
-  &__ttl {
-    font-size: rem(28);
-    text-indent: -2.6em;
+.p-opening__ttl {
+  @include mq(md) {
+    text-indent: 0;
+    writing-mode: horizontal-tb;
   }
-  &__txt4 {
-    font-size: rem(22);
-    padding-top: 20px;
+  font-size: rem(28);
+  text-indent: -2.6em;
+  writing-mode: vertical-rl;
+}
+.p-opening__txt1 {
+  @include mq(md) {
+    writing-mode: horizontal-tb;
   }
+  font-size: rem(16);
+  writing-mode: vertical-rl;
+}
+.p-opening__txt2 {
+  @include mq(md) {
+    writing-mode: horizontal-tb;
+  }
+  font-size: rem(16);
+  writing-mode: vertical-rl;
+}
+.p-opening__txt3 {
+  @include mq(md) {
+    writing-mode: horizontal-tb;
+  }
+  font-size: rem(16);
+  writing-mode: vertical-rl;
+}
+.p-opening__txt4 {
+  @include mq(md) {
+    padding-top: 0;
+    writing-mode: horizontal-tb;
+  }
+  padding-top: 335px;
+  padding-top: 320px;
+  font-size: rem(22);
+  writing-mode: vertical-rl;
 }
