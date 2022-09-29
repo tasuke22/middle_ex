@@ -508,6 +508,7 @@ img {
   min-height: 100vh;
   background: url(../../img/mainbg01.jpg) no-repeat center center/cover;
 }
+
 .p-mv__txt {
   position: absolute;
   top: 22%;
