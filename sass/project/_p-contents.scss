@@ -2,36 +2,41 @@
 @use "sass:math";
 
 .p-contents {
-  &__container {
-    display: flex;
-    margin-bottom: 120px;
-    line-height: 2;
-    gap: 0 135px;
-  }
-  &__pic {
-    align-self: center;
-    img {
-      aspect-ratio: math.div(1050, 545);
-      // object-fit: contain;
-      // height: 100%;
-    }
-  }
-  &__ttl {
-    margin-bottom: 75px;
-    font-size: rem(36);
-  }
-  &__txt {
-    margin-bottom: 75px;
-  }
-  &__wrap {
-    a {
-      padding: 20px 45px;
-      border: solid 1px #707070;
-    }
-  }
+  display: grid;
+  gap: rem(120) 0;
+  margin-bottom: rem(78);
 }
-
-.reverse {
+.p-contents__wrap {
   display: flex;
+  gap: 0 rem(122);
+  align-items: flex-start;
+}
+.p-contents__img {
+  // padding-right: 7.13542%;
+  // max-width: 100%;
+  // height: 540px;
+  // object-fit: cover;
+}
+.p-contents__wrap--revere {
   flex-direction: row-reverse;
+}
+.p-contents__concept {
+  padding-top: rem(22);
+  padding-bottom: rem(90);
+}
+.p-contents__title {
+  font-size: rem(36);
+  line-height: calc(62 / 36);
+  padding-bottom: rem(75);
+}
+.p-contents__txt {
+  font-size: rem(16);
+  line-height: calc(32 / 16);
+  padding-bottom: rem(75);
+}
+.p-contents__link {
+  font-size: rem(16);
+  display: inline-block;
+  border: solid 1px #707070;
+  padding: rem(20) rem(44);
 }

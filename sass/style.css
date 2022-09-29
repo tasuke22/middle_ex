@@ -552,33 +552,44 @@ img {
   padding-top: 20px;
 }
 
-.p-contents__container {
-  display: flex;
-  margin-bottom: 120px;
-  line-height: 2;
-  gap: 0 135px;
-}
-.p-contents__pic {
-  align-self: center;
-}
-.p-contents__pic img {
-  aspect-ratio: 1.9266055046;
-}
-.p-contents__ttl {
-  margin-bottom: 75px;
-  font-size: 2.25rem;
-}
-.p-contents__txt {
-  margin-bottom: 75px;
-}
-.p-contents__wrap a {
-  padding: 20px 45px;
-  border: solid 1px #707070;
+.p-contents {
+  display: grid;
+  gap: 7.5rem 0;
+  margin-bottom: 4.875rem;
 }
 
-.reverse {
+.p-contents__wrap {
   display: flex;
+  gap: 0 7.625rem;
+  align-items: flex-start;
+}
+
+.p-contents__wrap--revere {
   flex-direction: row-reverse;
+}
+
+.p-contents__concept {
+  padding-top: 1.375rem;
+  padding-bottom: 5.625rem;
+}
+
+.p-contents__title {
+  font-size: 2.25rem;
+  line-height: 1.7222222222;
+  padding-bottom: 4.6875rem;
+}
+
+.p-contents__txt {
+  font-size: 1rem;
+  line-height: 2;
+  padding-bottom: 4.6875rem;
+}
+
+.p-contents__link {
+  font-size: 1rem;
+  display: inline-block;
+  border: solid 1px #707070;
+  padding: 1.25rem 2.75rem;
 }
 
 .p-plan {
