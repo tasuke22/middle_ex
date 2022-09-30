@@ -994,7 +994,7 @@ img {
 .p-sub-contents__des h3 {
   padding-top: 3.75rem;
   font-size: 1.5rem;
-  line-height: 0.75;
+  line-height: 1.3333333333;
 }
 
 .p-sub-contents__des p {
