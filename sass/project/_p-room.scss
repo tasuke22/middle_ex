@@ -24,18 +24,38 @@
 // ========================
 
 .p-room__wrap {
-  // display: flex;
-  // flex-direction: row-reverse;
+  @include mq(lg) {
+    display: block;
+    margin-bottom: rem(122);
+  }
+  display: flex;
   position: relative;
   margin-bottom: rem(222);
 }
+.p-room__wrap--reverse {
+  flex-direction: row-reverse;
+}
 .p-room__img {
+  @include mq(lg) {
+    width: 100%;
+    text-align: center;
+  }
   width: calc(525 / 1180 * 100%);
 }
+.p-room__img img {
+  @include mq(lg) {
+    width: 100%;
+  }
+}
 .p-room__body {
+  @include mq(lg) {
+    position: static;
+    width: 100%;
+    margin: auto;
+  }
   position: absolute;
+  top: 10%;
   z-index: -3;
-  top: 15%;
   width: calc(813 / 1180 * 100%);
   background-image: url(../../img/bg.jpg);
 }
@@ -47,8 +67,23 @@
 }
 
 .p-room__des {
+  @include mq(lg) {
+    margin: auto;
+    padding: 0;
+    padding-bottom: rem(60);
+    text-align: center;
+  }
   padding-bottom: rem(95);
   padding-left: calc(244 / 813 * 100%);
+}
+.p-room__des--left {
+  @include mq(lg) {
+    margin: auto;
+    padding: 0;
+    padding-bottom: rem(60);
+    text-align: center;
+  }
+  padding-left: calc(60 / 813 * 100%);
 }
 .p-room__des h3 {
   padding-top: rem(60);
