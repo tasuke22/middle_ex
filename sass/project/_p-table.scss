@@ -1,0 +1,38 @@
+@use "../global" as *;
+
+.p-table {
+  margin-bottom: rem(95);
+}
+.p-table__title {
+  margin-bottom: rem(51);
+  padding-top: rem(95);
+  border-top: solid 1px #e7e7e7;
+  font-size: rem(26);
+  text-align: center;
+}
+.p-table__body {
+  display: grid;
+  padding-right: rem(150);
+  padding-bottom: rem(95);
+  padding-left: rem(150);
+  border-bottom: solid 1px #e7e7e7;
+  font-size: rem(15);
+  grid-template-columns: 0.25fr 0.75fr;
+  @include mq(md) {
+    padding: 0;
+  }
+}
+.p-table__header {
+  padding: rem(17) 0;
+  border-top: solid 1px #e7e7e7;
+}
+.p-table__data {
+  padding: rem(17) 0;
+  border-top: solid 1px #e7e7e7;
+}
+.p-table__header:nth-last-of-type(2) {
+  border-bottom: solid 1px #e7e7e7;
+}
+.p-table__data:last-of-type {
+  border-bottom: solid 1px #e7e7e7;
+}

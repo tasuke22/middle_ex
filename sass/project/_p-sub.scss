@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.p-sub__mv {
+  position: relative;
+  width: 100%;
+  height: rem(500);
+  background: url(../../img/oheya-header.png) no-repeat center center/cover;
+}
+.p-sub__mv-cooking {
+  position: relative;
+  width: 100%;
+  height: rem(500);
+  background: url(../../img/menu-header.png) no-repeat center center/cover;
+}
+.p-sub__mv-onsen {
+  position: relative;
+  width: 100%;
+  height: rem(500);
+  background: url(../../img/onsen-header.jpg) no-repeat center center/cover;
+}
+.p-sub__mv-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white-color;
+  font-size: rem(34);
+}

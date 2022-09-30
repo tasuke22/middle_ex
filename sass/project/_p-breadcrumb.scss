@@ -1,0 +1,27 @@
+@use "../global" as *;
+
+.p-breadcrumb {
+  margin-top: rem(36);
+}
+
+.p-breadcrumb li {
+  display: inline;
+}
+
+.p-breadcrumb li:after {
+  padding: 0 0.2em;
+  color: #555555;
+  content: ">";
+}
+
+.p-breadcrumb li:last-child:after {
+  content: "";
+}
+
+.p-breadcrumb li a {
+  color: #000000;
+}
+
+.p-breadcrumb li a:hover {
+  text-decoration: underline;
+}
