@@ -1,0 +1,21 @@
+@use "../global" as *;
+
+.l-underlayer-header {
+  width: 100%;
+}
+.l-underlayer-header__inner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: $block-color;
+}
+.l-underlayer-header__logo {
+  display: flex;
+  align-items: center;
+}
+.l-underlayer-header__ttl {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: rem(32);
+  letter-spacing: 0.1em;
+}

@@ -413,6 +413,29 @@ img {
   letter-spacing: 0.1em;
 }
 
+.l-underlayer-header {
+  width: 100%;
+}
+
+.l-underlayer-header__inner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #000000;
+}
+
+.l-underlayer-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.l-underlayer-header__ttl {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
 .l-footer {
   background-image: url(../../img/bg3.png);
 }
@@ -847,4 +870,106 @@ img {
   text-align: center;
   color: #fff;
   background-color: #000000;
+}
+
+.p-room {
+  position: relative;
+  width: 100%;
+  height: 31.25rem;
+  background: url(../../img/oheya-header.png) no-repeat center center/cover;
+}
+
+.p-room__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.125rem;
+}
+
+.p-room__txt {
+  margin-top: 6.125rem;
+  margin-bottom: 4.875rem;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+}
+
+.p-room__wrap {
+  position: relative;
+  margin-bottom: 13.875rem;
+}
+
+.p-room__img {
+  width: 44.4915254237%;
+}
+
+.p-room__body {
+  position: absolute;
+  z-index: -3;
+  top: 15%;
+  width: 68.8983050847%;
+  background-image: url(../../img/bg.jpg);
+}
+
+.p-room__body--right {
+  left: 31.1%;
+}
+
+.p-room__body--left {
+  left: 0;
+}
+
+.p-room__des {
+  padding-bottom: 5.9375rem;
+  padding-left: 30.012300123%;
+}
+
+.p-room__des h3 {
+  padding-top: 3.75rem;
+  font-size: 1.5rem;
+  line-height: 0.75;
+}
+
+.p-room__des p {
+  padding-top: 3.25rem;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.p-room__des span {
+  display: inline-block;
+  padding-top: 3.25rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ===============================================
+# パンくずリスト
+=============================================== */
+.breadcrumb {
+  margin-top: 2.25rem;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li:after {
+  padding: 0 0.2em;
+  color: #555555;
+  content: ">";
+}
+
+.breadcrumb li:last-child:after {
+  content: "";
+}
+
+.breadcrumb li a {
+  color: #000000;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,97 @@
+@use "../global" as *;
+
+.p-room {
+  position: relative;
+  width: 100%;
+  height: rem(500);
+  background: url(../../img/oheya-header.png) no-repeat center center/cover;
+}
+.p-room__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white-color;
+  font-size: rem(34);
+}
+.p-room__txt {
+  margin-top: rem(98);
+  margin-bottom: rem(78);
+  font-size: rem(16);
+  line-height: calc(32 / 16);
+  text-align: center;
+}
+// ========================
+
+.p-room__wrap {
+  // display: flex;
+  // flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: rem(222);
+}
+.p-room__img {
+  width: calc(525 / 1180 * 100%);
+}
+.p-room__body {
+  position: absolute;
+  z-index: -3;
+  top: 15%;
+  width: calc(813 / 1180 * 100%);
+  background-image: url(../../img/bg.jpg);
+}
+.p-room__body--right {
+  left: 31.1%;
+}
+.p-room__body--left {
+  left: 0;
+}
+
+.p-room__des {
+  padding-bottom: rem(95);
+  padding-left: calc(244 / 813 * 100%);
+}
+.p-room__des h3 {
+  padding-top: rem(60);
+  font-size: rem(24);
+  line-height: calc(24 / 32);
+}
+.p-room__des p {
+  padding-top: rem(52);
+  font-size: rem(16);
+  line-height: calc(32 / 16);
+}
+.p-room__des span {
+  display: inline-block;
+  padding-top: rem(52);
+  font-size: rem(14);
+  line-height: calc(21 / 14);
+}
+
+/* ===============================================
+# パンくずリスト
+=============================================== */
+.breadcrumb {
+  margin-top: rem(36);
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li:after {
+  padding: 0 0.2em;
+  color: #555555;
+  content: ">";
+}
+
+.breadcrumb li:last-child:after {
+  content: "";
+}
+
+.breadcrumb li a {
+  color: #000000;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
