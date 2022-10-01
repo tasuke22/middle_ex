@@ -1,0 +1,32 @@
+@use "../global" as *;
+
+.p-header__wrap {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: $white-color;
+}
+.p-header__logo {
+  display: flex;
+  align-items: center;
+}
+.p-header__title {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: rem(32);
+  letter-spacing: 0.1em;
+}
+
+.js-header.black-text {
+  color: $block-color;
+}
+.js-header-logo.white-logo {
+  display: none;
+}
+
+.js-header-logo-ul {
+  display: none;
+}
+.js-header-logo-ul.black-logo {
+  display: block;
+}
