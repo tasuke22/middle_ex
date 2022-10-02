@@ -16,17 +16,10 @@
   font-size: rem(32);
   letter-spacing: 0.1em;
 }
-
-.js-header.black-text {
-  color: $block-color;
-}
-.js-header-logo.white-logo {
+.js-header.none {
   display: none;
 }
 
-.js-header-logo-ul {
+.js-underlayer-header.none {
   display: none;
-}
-.js-header-logo-ul.black-logo {
-  display: block;
 }

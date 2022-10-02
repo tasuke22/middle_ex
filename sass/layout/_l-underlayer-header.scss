@@ -2,6 +2,11 @@
 
 .l-underlayer-header {
   width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 20;
+  top: 0;
+  left: 0;
 }
 .l-underlayer-header__inner {
   display: flex;

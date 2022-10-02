@@ -1,11 +1,18 @@
 @use "../global" as *;
 
 .p-cards {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 2fr);
   gap: 20px 46px;
   @include mq(md) {
     grid-template-columns: 1fr;
   }
+}
+
+.p-cards.is-active {
+  display: grid;
+}
+.p-news__select span.is-active {
+  text-decoration: underline;
 }

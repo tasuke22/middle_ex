@@ -1,10 +1,10 @@
-AOS.init({
-  offset: 100,
-  delay: 0,
-  duration: 500,
-  easing: "ease-in",
-  once: true,
-});
+// AOS.init({
+//   offset: 100,
+//   delay: 0,
+//   duration: 500,
+//   easing: "ease-in",
+//   once: true,
+// });
 
 // $(function () {
 //   $('a[href^="#"]').click(function () {
@@ -18,30 +18,43 @@ AOS.init({
 //   });
 // });
 
-$(function () {
-  $(".js-drawer-btn").on("click", function () {
-    $(this).toggleClass("open");
-    $(".js-drawer-nav").toggleClass("open");
-  });
-});
+// $(function () {
+//   $(".js-drawer-btn").on("click", function () {
+//     $(this).toggleClass("open");
+//     $(".js-drawer-nav").toggleClass("open");
+//   });
+// });
 
-$(".header__list a[href]").on("click", function (event) {
-  $(".js-drawer-btn").trigger("click");
-});
+// $(".header__list a[href]").on("click", function (event) {
+//   $(".js-drawer-btn").trigger("click");
+// });
 
-// スクロールするとロゴの色変更
 $(function () {
   $(window).on("scroll", function () {
     if (0 < $(this).scrollTop()) {
-      $(".js-header").addClass("black-text");
-      $(".js-header-logo").addClass("js-header-none");
-      $(".js-header-logo").addClass("white-logo");
-      $(".js-header-logo-ul").addClass("black-logo");
+      $(".js-header").addClass("none");
+      $(".js-underlayer-header").removeClass("none");
+      $(".js-underlayer-header").load("room.html .l-underlayer-header");
     } else {
-      $(".js-header").removeClass("black-text");
-      $(".js-header-logo").removeClass("js-header-none");
-      $(".js-header-logo").removeClass("white-logo");
-      $(".js-header-logo-ul").removeClass("black-logo");
+      $(".js-header").removeClass("none");
+      $(".js-underlayer-header").addClass("none");
     }
+  });
+});
+
+// $(function () {
+//   let select = $(".p-news__select > span");
+//   select.on("click", function () {
+//     let index = select.index($(this));
+//     $(".p-cards").removeClass("is-active").eq(index).addClass("is-active");
+//   });
+// });
+
+$(function () {
+  let select = $(".p-news__select > span");
+  select.on("click", function () {
+    let index = select.index($(this));
+    $(".p-cards").removeClass("is-active").eq(index).addClass("is-active");
+    select.removeClass("is-active").eq(index).addClass("is-active");
   });
 });

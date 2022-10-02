@@ -8,11 +8,9 @@
 .p-news__select {
   margin-top: rem(46);
   margin-bottom: rem(49);
+  cursor: pointer;
 }
 
-.p-news__select span:first-child {
-  text-decoration: underline;
-}
 .p-news__select span:last-child {
   margin-left: rem(50);
 }
