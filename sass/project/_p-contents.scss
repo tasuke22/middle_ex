@@ -5,6 +5,10 @@
   display: grid;
   gap: rem(120) 0;
   margin-bottom: rem(78);
+  @include mq(lg) {
+    padding-inline: rem(20);
+    text-align: center;
+  }
 }
 .p-contents__wrap {
   display: flex;

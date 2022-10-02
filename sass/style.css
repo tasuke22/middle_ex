@@ -738,6 +738,12 @@ img {
   gap: 7.5rem 0;
   margin-bottom: 4.875rem;
 }
+@media screen and (max-width: 1180px) {
+  .p-contents {
+    padding-inline: 1.25rem;
+    text-align: center;
+  }
+}
 
 .p-contents__wrap {
   display: flex;
