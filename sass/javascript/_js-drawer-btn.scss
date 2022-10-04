@@ -62,6 +62,22 @@
   }
 }
 
+.js-drawer-btn.ul-black span:nth-child(1) {
+  @include mq(md) {
+    background-color: black;
+  }
+}
+.js-drawer-btn.ul-black span:nth-child(2) {
+  @include mq(md) {
+    background-color: black;
+  }
+}
+.js-drawer-btn.ul-black span:nth-child(3) {
+  @include mq(md) {
+    background-color: black;
+  }
+}
+
 .js-drawer-btn.open span:nth-child(1) {
   @include mq(md) {
     top: 50%;

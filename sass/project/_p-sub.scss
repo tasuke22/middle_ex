@@ -4,19 +4,17 @@
   position: relative;
   width: 100%;
   height: rem(500);
-  background: url(../../img/oheya-header.png) no-repeat center center/cover;
   margin-top: rem(102);
 }
-.p-sub__mv-cooking {
-  position: relative;
-  width: 100%;
-  height: rem(500);
+
+.p-sub__mv--room {
+  background: url(../../img/oheya-header.png) no-repeat center center/cover;
+}
+
+.p-sub__mv--cooking {
   background: url(../../img/menu-header.png) no-repeat center center/cover;
 }
-.p-sub__mv-onsen {
-  position: relative;
-  width: 100%;
-  height: rem(500);
+.p-sub__mv--onsen {
   background: url(../../img/onsen-header.jpg) no-repeat center center/cover;
 }
 .p-sub__mv-title {
