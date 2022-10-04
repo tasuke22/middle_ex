@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.js-header-logo.none {
+  display: none;
+}
+.js-header-logo--sub {
+  display: none;
+}
+.js-header-logo--sub.black {
+  display: block;
+}

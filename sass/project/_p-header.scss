@@ -1,5 +1,13 @@
 @use "../global" as *;
 
+.p-header.black {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
 .p-header__wrap {
   display: flex;
   align-items: center;
@@ -16,10 +24,6 @@
   font-size: rem(32);
   letter-spacing: 0.1em;
 }
-.js-header.none {
-  display: none;
-}
-
-.js-underlayer-header.none {
-  display: none;
+.p-header__title.black {
+  color: black;
 }
