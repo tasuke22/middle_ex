@@ -8,6 +8,11 @@
   line-height: calc(32 / 16);
   text-align: center;
 }
+.p-sub-contents__txt br {
+  @include mq(md) {
+    display: none;
+  }
+}
 
 .p-sub-contents__wrap {
   @include mq(lg) {
@@ -63,6 +68,12 @@
   padding-bottom: rem(95);
   padding-left: calc(244 / 813 * 100%);
 }
+.p-sub-contents__des br {
+  @include mq(md) {
+    display: none;
+  }
+}
+
 .p-sub-contents__des--left {
   @include mq(lg) {
     margin: auto;

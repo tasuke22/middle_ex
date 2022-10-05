@@ -24,21 +24,21 @@
   <header class="l-header p-header js-header">
     <div class="p-header__wrap">
       <div class="p-header__logo">
-        <img class="js-header-logo" src="./img/logo01.png" alt="">
-        <img class="js-header-logo--sub" src="./img/logo02.png" alt="">
-        <h1 class="p-header__title">石井花壇</h1>
+        <img class="js-header-logo" src="./img/logo01.svg" alt="">
+        <img class="js-header-logo--sub" src="./img/logo02.svg" alt="">
+        <h1 class="p-header__title"><a href="index.html">石井花壇</a></h1>
       </div>
       <nav class="p-gnav js-drawer-nav js-drawer-nav--black">
         <ul class="p-gnav__list">
-          <li class="p-gnav__item"><a href="">お部屋</a></li>
-          <li class="p-gnav__item"><a href="">お料理</a></li>
-          <li class="p-gnav__item"><a href="">温泉</a></li>
+          <li class="p-gnav__item"><a href="room.html">お部屋</a></li>
+          <li class="p-gnav__item"><a href="cooking.html">お料理</a></li>
+          <li class="p-gnav__item"><a href="onsen.html">温泉</a></li>
         </ul>
       </nav>
-      <div class="p-reserve">
-        <img src="./img/calender.png" alt="">
-        <button data-micromodal-trigger="modal-1" role="button">宿泊予約</button>
-      </div>
+
+      <button class="p-reserve__button" data-micromodal-trigger="modal-1" role="button">
+        宿泊予約
+      </button>
       <button type="button" class="js-drawer-btn">
         <span></span>
         <span></span>
@@ -48,7 +48,7 @@
   </header>
 
 
-  <div id="modal-1" aria-hidden="true">
+  <div id="modal-1" aria-hidden="true" class="micromodal-slide">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <div class="modal-foam">
@@ -94,7 +94,7 @@
 
     <section class="p-opening">
       <div class="l-inner">
-        <div class="p-opening__wrap">
+        <div class="p-opening__wrap" data-aos="fade-up">
           <h2 class="p-opening__ttl">温海温泉の<br>美しさに癒やされて</h2>
           <p class="p-opening__txt1">
             東北の奥座敷である温海温泉郷<br>
@@ -119,7 +119,7 @@
 
 
     <section class="p-contents">
-      <div class="p-contents__wrap">
+      <div class="p-contents__wrap" data-aos="fade-up">
         <div class="p-contents__img">
           <img src="./img/oheya-top.jpg" alt="">
         </div>
@@ -133,10 +133,10 @@
             ひたすらにゆったりと…。<br>
             最高級の「何もしない時間」をお過ごしください。
           </p>
-          <a class="p-contents__link" href="#">お部屋について</a>
+          <a class="p-contents__link" href="room.html">お部屋について</a>
         </div>
       </div>
-      <div class="p-contents__wrap p-contents__wrap--revere">
+      <div class="p-contents__wrap p-contents__wrap--revere" data-aos="fade-up">
         <div class="p-contents__img">
           <img src="./img/menu-top.jpg" alt="">
         </div>
@@ -150,10 +150,10 @@
             ひたすらにゆったりと…。<br>
             最高級の「何もしない時間」をお過ごしください。
           </p>
-          <a class="p-contents__link" href="#">料理について</a>
+          <a class="p-contents__link" href="cooking.html">料理について</a>
         </div>
       </div>
-      <div class="p-contents__wrap">
+      <div class="p-contents__wrap" data-aos="fade-up">
         <div class="p-contents__img">
           <img src="./img/onsen-top.jpg" alt="">
         </div>
@@ -167,7 +167,7 @@
             現代人の疲弊しきった身体を修復する最高級の湯治場として<br>
             ご活用ください。
           </p>
-          <a class="p-contents__link" href="#">温泉について</a>
+          <a class="p-contents__link" href="onsen.html">温泉について</a>
         </div>
       </div>
     </section>
@@ -180,34 +180,29 @@
           <p class="c-section-title__txt">おすすめご宿泊プラン</p>
         </h2>
         <div class="p-plan__wrap">
-          <div class="p-plan__body">
+          <div class="p-plan__body" data-aos="fade-up">
             <img src="./img/plan01.jpg" alt="" class="p-plan__img">
             <p class="p-plan__title">
               朝食付きプラン、日本近海で取れた<br>
               のどぐろを朝食として…
             </p>
             <p class="p-plan__txt">
-              最高級と称されるのどぐろ、正式には「アカ<br>
-              ムツ」と呼ばれる魚、味は独特の上品な味わ<br>
-              いで、焼いても煮ても美味
+              最高級と称されるのどぐろ、正式には「アカ<br>ムツ」と呼ばれる魚、味は独特の上品な味わ<br>いで、焼いても煮ても美味。
             </p>
           </div>
-          <div class="p-plan__body">
+          <div class="p-plan__body" data-aos="fade-up">
             <img src="./img/plan02.jpg" alt="" class="p-plan__img">
             <p class="p-plan__title">
               【期間限定】熱海蟹をたっぷりと愉しむプラン。
             </p>
             <p class="p-plan__txt">
-              温海で水揚げされた蟹は「温海蟹」<br>
-              として知られ、嗜好品として愛されて<br>
-              きました。この宿泊プランでは存分に
+              温海で水揚げされた蟹は「温海蟹」<br>として知られ、嗜好品として愛されて<br>きました。この宿泊プランでは存分に。
             </p>
           </div>
-          <div class="p-plan__body">
+          <div class="p-plan__body" data-aos="fade-up">
             <img src="./img/plan03.jpg" alt="" class="p-plan__img">
             <p class="p-plan__title">
-              【平日限定】贅沢美味懐石プラン。
-              海辺の四季旬彩プラン。
+              【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。
             </p>
             <p class="p-plan__txt">
               熱海近海で取れた魚を鮮度そのままに舟盛りにしてご提供。生きた味をお楽しみください。
@@ -218,15 +213,15 @@
 
     <section class="p-news l-inner">
       <h2 class="c-section-title">
-        <img src="./img/logo02.png" alt="" class="c-section-title__logo">
+        <img src="./img/logo02.svg" alt="" class="c-section-title__logo">
         <p class="c-section-title__txt">お知らせ</p>
       </h2>
       <div class="p-news__select">
-        <span class="is-active">営業情報</span>
-        <span>その他</span>
+        <span class="is-active"><a>営業情報</a></span>
+        <span><a>その他</a></span>
       </div>
 
-      <div class="p-cards is-active">
+      <div class="p-cards is-active" data-aos="fade-up">
         <a href="" class="c-card">
           <img src="./img/news01.jpg" alt="" class="c-card__img">
           <div class="c-card__body">
@@ -321,10 +316,10 @@
     <section class="p-access">
       <div class="l-inner">
         <h2 class="c-section-title">
-          <img src="./img/logo02.png" alt="" class="c-section-title__logo">
+          <img src="./img/logo02.svg" alt="" class="c-section-title__logo">
           <p class="c-section-title__txt">アクセス</p>
         </h2>
-        <div class="p-access__wrap">
+        <div class="p-access__wrap" data-aos="fade-up">
           <img class="p-access__img" src="./img/acess.png" alt="">
           <div class="p-access__txt">
             <p><strong>住所</strong></p>
@@ -341,7 +336,8 @@
         </div>
         <iframe class="p-iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47573.18864224226!2d139.59190449850627!3d38.61335625888153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1664393840682!5m2!1sja!2sjp"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          data-aos="fade-up"></iframe>
       </div>
     </section>
 
@@ -350,14 +346,14 @@
   <footer class="l-footer">
     <nav class="p-gnav--vertical">
       <ul class="p-gnav__list--vertical">
-        <li class="p-gnav__item--vertical"><a href="#">お部屋</a></li>
-        <li class="p-gnav__item--vertical"><a href="#">お料理</a></li>
-        <li class="p-gnav__item--vertical"><a href="#">温泉</a></li>
+        <li class="p-gnav__item--vertical"><a href="room.html">お部屋</a></li>
+        <li class="p-gnav__item--vertical"><a href="cooking.html">お料理</a></li>
+        <li class="p-gnav__item--vertical"><a href="onsen.html">温泉</a></li>
       </ul>
     </nav>
     <div class="p-footer">
       <h2 class="c-section-title">
-        <img src="./img/logo02.png" alt="" class="c-section-title__logo">
+        <img src="./img/logo02.svg" alt="" class="c-section-title__logo">
         <p class="c-section-title__txt c-section-title__txt--footer">石井花壇</p>
       </h2>
       <address class="p-footer__address">

@@ -34,3 +34,9 @@
   font-size: rem(16);
   line-height: calc(32 / 16);
 }
+
+.p-plan__txt br {
+  @include mq(md) {
+    display: none;
+  }
+}

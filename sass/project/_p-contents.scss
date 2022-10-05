@@ -59,6 +59,11 @@
     padding-bottom: rem(35);
   }
 }
+.p-contents__txt br {
+  @include mq(md) {
+    display: none;
+  }
+}
 .p-contents__link {
   font-size: rem(16);
   display: inline-block;

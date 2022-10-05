@@ -12,3 +12,9 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
+
+a:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
