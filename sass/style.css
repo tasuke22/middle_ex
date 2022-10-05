@@ -493,8 +493,8 @@ a:hover {
 }
 
 .c-card__txt {
-  margin-top: 0.625rem;
   font-size: 1rem;
+  line-height: 2;
 }
 
 .c-reserve__button {
