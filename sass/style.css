@@ -1514,6 +1514,11 @@ a:hover {
   margin-bottom: 5.625rem;
 }
 
+.modal__submit-button:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
 .modal__close {
   display: block;
   position: absolute;

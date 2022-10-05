@@ -82,6 +82,10 @@
   margin-top: rem(64);
   margin-bottom: rem(90);
 }
+.modal__submit-button:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
 
 .modal__close {
   display: block;
