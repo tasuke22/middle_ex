@@ -427,12 +427,26 @@ a:hover {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .l-underlayer-header__logo {
+    display: block;
+    text-align: center;
+  }
+}
 
 .l-underlayer-header__ttl {
   margin-left: 15px;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .l-underlayer-header__ttl {
+    margin-right: 0;
+    font-size: 1.25rem;
+    margin: auto;
+    padding-top: 0.625rem;
+  }
 }
 
 .l-footer {
@@ -586,6 +600,7 @@ a:hover {
   margin-left: auto;
   padding: 1.25rem 2.3125rem;
   background-color: #978f10;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .p-reserve__button {

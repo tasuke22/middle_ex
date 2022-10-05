@@ -6,6 +6,7 @@
   margin-left: auto;
   padding: rem(20) rem(37);
   background-color: $reserve-btn;
+  color: $white-color;
   @include mq(md) {
     margin-right: rem(20);
     padding: rem(10) rem(27);

@@ -17,10 +17,21 @@
 .l-underlayer-header__logo {
   display: flex;
   align-items: center;
+  @include mq(md) {
+    display: block;
+    text-align: center;
+  }
 }
+
 .l-underlayer-header__ttl {
   margin-left: 15px;
   font-weight: bold;
   font-size: rem(32);
   letter-spacing: 0.1em;
+  @include mq(md) {
+    margin-right: 0;
+    font-size: rem(20);
+    margin: auto;
+    padding-top: rem(10);
+  }
 }
