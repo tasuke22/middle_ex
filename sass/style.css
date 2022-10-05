@@ -1285,6 +1285,7 @@ a:hover {
 .p-table__data {
   padding: 1.0625rem 0;
   border-top: solid 1px #e7e7e7;
+  line-height: 1.4666666667;
 }
 
 .p-table__header:nth-last-of-type(2) {

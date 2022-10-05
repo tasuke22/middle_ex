@@ -29,6 +29,7 @@
 .p-table__data {
   padding: rem(17) 0;
   border-top: solid 1px #e7e7e7;
+  line-height: calc(22 / 15);
 }
 .p-table__header:nth-last-of-type(2) {
   border-bottom: solid 1px #e7e7e7;
