@@ -1,0 +1,116 @@
+@use "../global" as *;
+
+#modal-1 {
+  display: none;
+}
+#modal-1.is-open {
+  display: block;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  position: relative;
+  background-color: #ffffff;
+  padding-inline: rem(60);
+  width: 550px;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.modal__form {
+  margin-top: rem(35);
+}
+.modal-title {
+  font-size: rem(20);
+  line-height: calc(34 / 20);
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+.modal__name {
+  margin-top: rem(14);
+  margin-bottom: rem(14);
+  padding: rem(10);
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+.modal__email {
+  margin-top: rem(14);
+  margin-bottom: rem(14);
+  padding: rem(10);
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+
+.modal__plan {
+  margin-top: rem(14);
+  margin-bottom: rem(14);
+  padding: rem(10);
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+.modal__calendar {
+  margin-top: rem(14);
+  margin-bottom: rem(14);
+  padding: rem(10);
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+.modal__submit-button {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: rem(13) rem(67);
+  border: solid 1px #707070;
+  display: block;
+  margin-top: rem(64);
+  margin-bottom: rem(90);
+}
+
+.modal__close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  width: 30px;
+  height: 32px;
+  background-color: #ffffff;
+}
+
+.modal__close span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.modal__close span:nth-child(1) {
+  top: 16px;
+  background-color: #707070;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+.modal__close span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #707070;
+  border-radius: 10px;
+  transform: rotate(-45deg);
+}

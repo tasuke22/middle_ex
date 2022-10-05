@@ -1370,4 +1370,128 @@ img {
 
 .js-header-logo--sub.black {
   display: block;
+}
+
+#modal-1 {
+  display: none;
+}
+
+#modal-1.is-open {
+  display: block;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  position: relative;
+  background-color: #ffffff;
+  padding-inline: 3.75rem;
+  width: 550px;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__form {
+  margin-top: 2.1875rem;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.modal__name {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+  padding: 0.625rem;
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+
+.modal__email {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+  padding: 0.625rem;
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+
+.modal__plan {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+  padding: 0.625rem;
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+
+.modal__calendar {
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+  padding: 0.625rem;
+  display: block;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+}
+
+.modal__submit-button {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 0.8125rem 4.1875rem;
+  border: solid 1px #707070;
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: 5.625rem;
+}
+
+.modal__close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  width: 30px;
+  height: 32px;
+  background-color: #ffffff;
+}
+
+.modal__close span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.modal__close span:nth-child(1) {
+  top: 16px;
+  background-color: #707070;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+
+.modal__close span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #707070;
+  border-radius: 10px;
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=style.css.map */

@@ -35,7 +35,7 @@
       </nav>
       <div class="p-reserve">
         <img src="./img/calender.png" alt="">
-        <button>宿泊予約</button>
+        <button data-micromodal-trigger="modal-1" role="button">宿泊予約</button>
       </div>
       <button type="button" class="js-drawer-btn ul-black">
         <span></span>
@@ -44,6 +44,36 @@
       </button>
     </div>
   </header>
+
+  <div id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <div class="modal-foam">
+          <div class="modal-title">宿泊予約</div>
+          <form action="" class="modal__form">
+            <label for="name">お名前</label>
+            <input class="modal__name" type="text" id="name" placeholder="例：石井正悟">
+            <label for="email">メールアドレス</label>
+            <input class="modal__email" type="text" id="email" placeholder="例：Example@example.com">
+            <label for="plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
+            <select class="modal__plan" name="plan" id="plan" onchange="changeColor(this)">
+              <option value="" disabled selected>プランを選択してください</option>
+              <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+              <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+              <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+            </select>
+            <label for="calender">日時選択</label>
+            <input class="modal__calendar" type="text" id="calendar" placeholder="日時を選択してください">
+          </form>
+          <input class="modal__submit-button" type="submit" value="送信する">
+          <button type="button" class="modal__close" data-micromodal-close>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="l-main">
     <section class="p-sub__mv p-sub__mv--onsen">
@@ -153,7 +183,10 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="./script.js"></script>
 </body>
 

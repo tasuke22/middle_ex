@@ -1,33 +1,22 @@
-// AOS.init({
-//   offset: 100,
-//   delay: 0,
-//   duration: 500,
-//   easing: "ease-in",
-//   once: true,
-// });
+AOS.init({
+  offset: 100,
+  delay: 0,
+  duration: 500,
+  easing: "ease-in",
+  once: true,
+});
 
-// $(function () {
-//   $('a[href^="#"]').click(function () {
-//     let speed = 400;
-//     let adjust = -100;
-//     let href = $(this).attr("href");
-//     let target = $(href == "#" || href == "" ? "html" : href);
-//     let position = target.offset().top + adjust;
-//     $("body,html").animate({ scrollTop: position }, speed, "swing");
-//     return false;
-//   });
-// });
-
-// $(function () {
-//   $(".js-drawer-btn").on("click", function () {
-//     $(this).toggleClass("open");
-//     $(".js-drawer-nav").toggleClass("open");
-//   });
-// });
-
-// $(".header__list a[href]").on("click", function (event) {
-//   $(".js-drawer-btn").trigger("click");
-// });
+$(function () {
+  $('a[href^="#"]').click(function () {
+    let speed = 400;
+    let adjust = -100;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top + adjust;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+});
 
 // タブの切替
 $(function () {
@@ -50,8 +39,6 @@ $(function () {
 $(".header__list a[href]").on("click", function (event) {
   $(".js-drawer-btn").trigger("click");
 });
-
-// なにをしたら横からでてくるんだっけ？
 
 $(window).on("scroll", function () {
   if (50 < $(this).scrollTop()) {
@@ -89,3 +76,24 @@ $(".js-drawer-btn").on("click", function () {
     $(".js-drawer-btn").removeClass("black");
   }
 });
+
+MicroModal.init({
+  openClass: "is-open",
+  disableScroll: true,
+  awaitOpenAnimation: true, // [8]
+  // awaitCloseAnimation: true, // [9]
+});
+
+// flatpickr
+const config = {
+  mode: "range",
+  altInput: true,
+  minDate: "today",
+  maxDate: new Date().fp_incr(365),
+  altFormat: "Y-m-d",
+  dateFormat: "Y-m-d",
+  locale: {
+    rangeSeparator: " ～ ",
+  },
+};
+flatpickr(".modal__calendar", config);
