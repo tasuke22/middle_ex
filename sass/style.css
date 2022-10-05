@@ -497,6 +497,35 @@ a:hover {
   font-size: 1rem;
 }
 
+.c-reserve__button {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 1.25rem 2.3125rem;
+  background-color: #978f10;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .c-reserve__button {
+    margin-right: 1.25rem;
+    padding: 0.625rem 1.6875rem;
+  }
+}
+
+.c-reserve__button::before {
+  content: "";
+  display: inline-block;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 0.625rem;
+  background: url(/img/calender.svg) no-repeat center center/cover;
+}
+
+.c-reserve__button:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
 .p-header.black {
   width: 100%;
   position: fixed;
@@ -592,35 +621,6 @@ a:hover {
 
 .p-gnav__item--vertical {
   font-size: 1.125rem;
-}
-
-.p-reserve__button {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 1.25rem 2.3125rem;
-  background-color: #978f10;
-  color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .p-reserve__button {
-    margin-right: 1.25rem;
-    padding: 0.625rem 1.6875rem;
-  }
-}
-
-.p-reserve__button::before {
-  content: "";
-  display: inline-block;
-  width: 1.375rem;
-  height: 1.375rem;
-  margin-right: 0.625rem;
-  background: url(/img/calender.svg) no-repeat center center/cover;
-}
-
-.p-reserve__button:hover {
-  transition: 0.3s;
-  opacity: 0.5;
 }
 
 .p-mv {

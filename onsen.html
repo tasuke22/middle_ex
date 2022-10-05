@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
-
 <body>
   <header class="l-underlayer-header">
     <div class="l-underlayer-header__inner">
@@ -35,7 +34,7 @@
           <li class="p-gnav__item"><a href="onsen.html">温泉</a></li>
         </ul>
       </nav>
-      <button class="p-reserve__button" data-micromodal-trigger="modal-1" role="button">
+      <button class="c-reserve__button" data-micromodal-trigger="modal-1" role="button">
         宿泊予約
       </button>
       <button type="button" class="js-drawer-btn ul-black">
@@ -45,7 +44,35 @@
       </button>
     </div>
   </header>
-
+  <div id="modal-1" aria-hidden="true" class="micromodal-slide">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <div class="modal-foam">
+          <div class="modal-title">宿泊予約</div>
+          <form action="" class="modal__form">
+            <label for="name">お名前</label>
+            <input class="modal__name" type="text" id="name" placeholder="例：石井正悟">
+            <label for="email">メールアドレス</label>
+            <input class="modal__email" type="text" id="email" placeholder="例：Example@example.com">
+            <label for="plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
+            <select class="modal__plan" name="plan" id="plan" onchange="changeColor(this)">
+              <option value="" disabled selected>プランを選択してください</option>
+              <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+              <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+              <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+            </select>
+            <label for="calender">日時選択</label>
+            <input class="modal__calendar" type="text" id="calendar" placeholder="日時を選択してください">
+          </form>
+          <input class="modal__submit-button" type="submit" value="送信する">
+          <button type="button" class="modal__close" data-micromodal-close>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="modal-1" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
@@ -75,7 +102,6 @@
       </div>
     </div>
   </div>
-
   <div class="l-main">
     <section class="p-sub__mv p-sub__mv--onsen">
       <h2 class="p-sub__mv-title">温泉</h2>
@@ -132,12 +158,10 @@
           </div>
         </div>
       </div>
-
       <div class="p-table">
         <h2 class="p-table__title">
           温泉の効能
         </h2>
-
         <div class="p-table__body">
           <p class="p-table__header">効能</p>
           <p class="p-table__data">神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど</p>
@@ -146,15 +170,7 @@
           <p class="p-table__header">効能</p>
           <p class="p-table__data">弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化器病に効果があります。</p>
         </div>
-
-
       </div>
-
-
-
-
-
-
     </div>
   </div><!-- main -->
   <footer class="l-footer">

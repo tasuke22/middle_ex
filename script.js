@@ -80,8 +80,8 @@ $(".js-drawer-btn").on("click", function () {
 MicroModal.init({
   openClass: "is-open",
   disableScroll: true,
-  awaitOpenAnimation: true, // [8]
-  // awaitCloseAnimation: true, // [9]
+  awaitOpenAnimation: true,
+  awaitCloseAnimation: true,
 });
 
 // flatpickr

@@ -1,19 +1,19 @@
 @use "../global" as *;
 
-.p-reserve__button {
+.c-reserve__button {
   display: flex;
   align-items: center;
   margin-left: auto;
   padding: rem(20) rem(37);
   background-color: $reserve-btn;
-  color: $white-color;
+  color: $sub-color;
   @include mq(md) {
     margin-right: rem(20);
     padding: rem(10) rem(27);
   }
 }
 
-.p-reserve__button::before {
+.c-reserve__button::before {
   content: "";
   display: inline-block;
   width: rem(22);
@@ -22,7 +22,7 @@
   background: url(/img/calender.svg) no-repeat center center/cover;
 }
 
-.p-reserve__button:hover {
+.c-reserve__button:hover {
   transition: 0.3s;
   opacity: 0.5;
 }
