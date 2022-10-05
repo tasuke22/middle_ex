@@ -1433,7 +1433,11 @@ a:hover {
 
 .js-header-logo--sub {
   display: none;
-  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .js-header-logo--sub {
+    margin: auto;
+  }
 }
 
 .js-header-logo--sub.black {
