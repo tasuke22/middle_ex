@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="icon" href="./img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="./img/logo01.svg" type="image/svg+xml">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -44,144 +44,147 @@
       </button>
     </div>
   </header>
-  <div id="modal-1" aria-hidden="true" class="micromodal-slide">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <div class="modal-foam">
-          <div class="modal-title">宿泊予約</div>
-          <form action="" class="modal__form">
-            <label for="name">お名前</label>
-            <input class="modal__name" type="text" id="name" placeholder="例：石井正悟">
-            <label for="email">メールアドレス</label>
-            <input class="modal__email" type="text" id="email" placeholder="例：Example@example.com">
-            <label for="plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
-            <select class="modal__plan" name="plan" id="plan" onchange="changeColor(this)">
-              <option value="" disabled selected>プランを選択してください</option>
-              <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
-              <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
-              <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
-            </select>
-            <label for="calender">日時選択</label>
-            <input class="modal__calendar" type="text" id="calendar" placeholder="日時を選択してください">
-          </form>
-          <input class="modal__submit-button" type="submit" value="送信する">
-          <button type="button" class="modal__close" data-micromodal-close>
-            <span></span>
-            <span></span>
-          </button>
+
+  <main>
+    <div id="modal-1" aria-hidden="true" class="micromodal-slide">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <div class="modal-foam">
+            <div class="modal-title">宿泊予約</div>
+            <form action="" class="modal__form">
+              <label for="name">お名前</label>
+              <input class="modal__name" type="text" id="name" placeholder="例：石井正悟">
+              <label for="email">メールアドレス</label>
+              <input class="modal__email" type="text" id="email" placeholder="例：Example@example.com">
+              <label for="plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
+              <select class="modal__plan" name="plan" id="plan" onchange="changeColor(this)">
+                <option value="" disabled selected>プランを選択してください</option>
+                <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+              </select>
+              <label for="calender">日時選択</label>
+              <input class="modal__calendar" type="text" id="calendar" placeholder="日時を選択してください">
+            </form>
+            <input class="modal__submit-button" type="submit" value="送信する">
+            <button type="button" class="modal__close" data-micromodal-close>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="modal-1" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-        <div class="modal-foam">
-          <div class="modal-title">宿泊予約</div>
-          <form action="" class="modal__form">
-            <label for="name">お名前</label>
-            <input class="modal__name" type="text" id="name" placeholder="例：石井正悟">
-            <label for="email">メールアドレス</label>
-            <input class="modal__email" type="text" id="email" placeholder="例：Example@example.com">
-            <label for="plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
-            <select class="modal__plan" name="plan" id="plan" onchange="changeColor(this)">
-              <option value="" disabled selected>プランを選択してください</option>
-              <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
-              <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
-              <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
-            </select>
-            <label for="calender">日時選択</label>
-            <input class="modal__calendar" type="text" id="calendar" placeholder="日時を選択してください">
-          </form>
-          <input class="modal__submit-button" type="submit" value="送信する">
-          <button type="button" class="modal__close" data-micromodal-close>
-            <span></span>
-            <span></span>
-          </button>
+    <div id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <div class="modal-foam">
+            <div class="modal-title">宿泊予約</div>
+            <form action="" class="modal__form">
+              <label for="name">お名前</label>
+              <input class="modal__name" type="text" id="name" placeholder="例：石井正悟">
+              <label for="email">メールアドレス</label>
+              <input class="modal__email" type="text" id="email" placeholder="例：Example@example.com">
+              <label for="plan">ご希望プラン<span>（空いているプランのみ表示されます）</span></label>
+              <select class="modal__plan" name="plan" id="plan" onchange="changeColor(this)">
+                <option value="" disabled selected>プランを選択してください</option>
+                <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                <option value="②平日に優雅に楽しむ、特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="③絶景貸切露天と個室会席を満喫できるファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+              </select>
+              <label for="calender">日時選択</label>
+              <input class="modal__calendar" type="text" id="calendar" placeholder="日時を選択してください">
+            </form>
+            <input class="modal__submit-button" type="submit" value="送信する">
+            <button type="button" class="modal__close" data-micromodal-close>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <section class="p-sub__mv p-sub__mv--room">
-    <h2 class="p-sub__mv-title">お部屋</h2>
-  </section>
-  <div class="l-inner">
-    <ol class="p-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="index.html">
-          <span itemprop="name">トップ</span>
-        </a>
-        <meta itemprop="position" content="1" />
-      </li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="room.html">
-          <span itemprop="name">お部屋</span>
-        </a>
-        <meta itemprop="position" content="2" />
-      </li>
-    </ol>
-    <div class="p-sub-contents__txt">
-      <p>
-        創業より受け継がれてきた石井花壇の和の造り<br>
-        温海の雄大な絶景を堪能していただけるように設計された客室<br>
-        ゆるやかに流れ行く時間に身を委ねて
-      </p>
-    </div>
-    <div class="p-sub-contents__wrap">
-      <div class="p-sub-contents__img">
-        <img src="img/oheya01.jpg" alt="">
+    <section class="p-sub__mv p-sub__mv--room">
+      <h2 class="p-sub__mv-title">お部屋</h2>
+    </section>
+    <div class="l-inner">
+      <ol class="p-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="index.html">
+            <span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="room.html">
+            <span itemprop="name">お部屋</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+      <div class="p-sub-contents__txt">
+        <p>
+          創業より受け継がれてきた石井花壇の和の造り<br>
+          温海の雄大な絶景を堪能していただけるように設計された客室<br>
+          ゆるやかに流れ行く時間に身を委ねて
+        </p>
       </div>
-      <div class="p-sub-contents__body p-sub-contents__body--right">
-        <div class="p-sub-contents__des">
-          <h3>温泉付き客室</h3>
-          <p>
-            温海の源泉かけ流し露天風呂付き客室になります。<br>
-            あなただけの上質な安らぎのひとときを。
-          </p>
-          <span>
-            ＊部屋数に限りがございます。<br>
-            ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
-          </span>
+      <div class="p-sub-contents__wrap">
+        <div class="p-sub-contents__img">
+          <img src="img/oheya01.jpg" alt="">
+        </div>
+        <div class="p-sub-contents__body p-sub-contents__body--right">
+          <div class="p-sub-contents__des">
+            <h3>温泉付き客室</h3>
+            <p>
+              温海の源泉かけ流し露天風呂付き客室になります。<br>
+              あなただけの上質な安らぎのひとときを。
+            </p>
+            <span>
+              ＊部屋数に限りがございます。<br>
+              ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-sub-contents__wrap p-sub-contents__wrap--reverse">
+        <div class="p-sub-contents__img">
+          <img src="img/oheya02.jpg" alt="">
+        </div>
+        <div class="p-sub-contents__body p-sub-contents__body--left">
+          <div class="p-sub-contents__des p-sub-contents__des--left">
+            <h3>庭園付き客室</h3>
+            <p>
+              庭園付きの客室になります。<br>
+              お庭を見ながら、ほっとするひとときをお過ごしください。
+            </p>
+            <span>
+              ＊お庭は複数のお客様と囲む形になります。<br>
+              ＊部屋数に限りがあります。<br>
+              ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-sub-contents__wrap">
+        <div class="p-sub-contents__img">
+          <img src="img/oheya03.jpg" alt="">
+        </div>
+        <div class="p-sub-contents__body p-sub-contents__body--right">
+          <div class="p-sub-contents__des">
+            <h3>一般客室</h3>
+            <p>
+              最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>
+              内装となっており、とても過ごしやすくしていただけます。
+            </p>
+            <span>
+              ＊全室お部屋より日本海を望むことができます。
+            </span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="p-sub-contents__wrap p-sub-contents__wrap--reverse">
-      <div class="p-sub-contents__img">
-        <img src="img/oheya02.jpg" alt="">
-      </div>
-      <div class="p-sub-contents__body p-sub-contents__body--left">
-        <div class="p-sub-contents__des p-sub-contents__des--left">
-          <h3>庭園付き客室</h3>
-          <p>
-            庭園付きの客室になります。<br>
-            お庭を見ながら、ほっとするひとときをお過ごしください。
-          </p>
-          <span>
-            ＊お庭は複数のお客様と囲む形になります。<br>
-            ＊部屋数に限りがあります。<br>
-            ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="p-sub-contents__wrap">
-      <div class="p-sub-contents__img">
-        <img src="img/oheya03.jpg" alt="">
-      </div>
-      <div class="p-sub-contents__body p-sub-contents__body--right">
-        <div class="p-sub-contents__des">
-          <h3>一般客室</h3>
-          <p>
-            最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>
-            内装となっており、とても過ごしやすくしていただけます。
-          </p>
-          <span>
-            ＊全室お部屋より日本海を望むことができます。
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
   <footer class="l-footer">
     <nav class="p-gnav--vertical">
       <ul class="p-gnav__list--vertical">
@@ -191,10 +194,10 @@
       </ul>
     </nav>
     <div class="p-footer">
-      <h2 class="c-section-title">
+      <a href="index.html">
         <img src="./img/logo02.svg" alt="" class="c-section-title__logo">
         <p class="c-section-title__txt c-section-title__txt--footer">石井花壇</p>
-      </h2>
+      </a>
       <address class="p-footer__address">
         <span>〒000-0000</span>
         <span>山形県鶴岡市xxxxxxxxxxx</span>
@@ -204,11 +207,10 @@
         <span>FAX.00-0000-0000</span>
       </div>
     </div>
-    <p class="p-footer__copy"><small>Copyright © 石井花壇 All Rights Reserved.</small></p>
+    <p class="p-footer__copy"><small>Copyright &copy; 石井花壇 All Rights Reserved.</small></p>
   </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">

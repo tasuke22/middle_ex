@@ -486,6 +486,7 @@ a:hover {
 .c-card__body {
   padding-left: 1.875rem;
   text-align: start;
+  flex: 1;
 }
 
 .c-card__time {
@@ -643,7 +644,9 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .p-mv__txt {
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1157,6 +1160,7 @@ a:hover {
   z-index: -3;
   width: 68.8983050847%;
   background-image: url(../../img/bg.jpg);
+  padding-inline: 1.25rem;
 }
 @media screen and (max-width: 1180px) {
   .p-sub-contents__body {
